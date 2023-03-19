@@ -1,0 +1,69 @@
+@import '../variaveis/vars.scss';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: $poppins;
+    background: linear-gradient(120deg, $preto-1, $preto-0);
+}
+
+//scroll
+body::-webkit-scrollbar {
+    width: 4px;          
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $preto-3; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, $rosa-0, $roxo-0);
+    border-radius: $radius;
+  }
+
+
+//padrões
+
+//botão
+.btn{
+    text-decoration: none;
+    border-radius: $radius;
+    font-size: $font-size-1;
+    font-weight: 600;
+    color: $branco-0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    transition: .3s;
+
+    ion-icon{
+        padding: 5px;
+        border-radius: 50%;
+        transition: .3s;
+        color: $branco-0;
+    }
+
+    &:hover{
+        width: 210px;
+        color: #ffffff66;
+        transition: .3s;
+        
+
+        ion-icon{
+            padding: 5px;
+            margin-left: 10px;
+            background: linear-gradient(45deg, $rosa-0, $roxo-0);
+            border-radius: 50%;
+            color: $branco-0;
+            transition: .3s;
+        }
+    }
+}

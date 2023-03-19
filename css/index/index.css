@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #111111, #000);
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #ff2b7c, #a124c0);
+  border-radius: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  transition: 0.3s;
+}
+.btn ion-icon {
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+  color: #f6f6f6;
+}
+.btn:hover {
+  width: 210px;
+  color: rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+.btn:hover ion-icon {
+  padding: 5px;
+  margin-left: 10px;
+  background: linear-gradient(45deg, #ff2b7c, #a124c0);
+  border-radius: 50%;
+  color: #f6f6f6;
+  transition: 0.3s;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+main {
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+}
+main .conteudo-main {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+}
+main .conteudo-main .p1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+main .conteudo-main .p1 video {
+  width: 100%;
+  border-radius: 12px;
+}
+main .conteudo-main .p2 {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  padding-left: 3%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .conteudo-main .p2 .titulo {
+  display: flex;
+}
+main .conteudo-main .p2 .titulo h1, main .conteudo-main .p2 .titulo span {
+  font-size: 3.5em;
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff2b7c, #a124c0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .conteudo-main .p2 p {
+  font-size: 1.25em;
+  text-align: justify;
+  color: #f6f6f6;
+}
+main .conteudo-main .p2 .botao {
+  margin-top: 5%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
