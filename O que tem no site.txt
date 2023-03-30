@@ -1,0 +1,15 @@
+0 - Menu Responsivo:
+	+ Logo
+	+ Inicio
+	+ Sobre
+	+ Parceiros
+	+ Multiverso (Maverick 2, moodle 2, etc)
+	+ Contato
+	+ Comprar Domínio;
+1- Home (Com o Rick Astley) + um texto sobre "o que significaria UTFPR";
+2 - Aba sobre nós (Nossas fotos, nomes, pequena bio e nossas redes sociais);
+3 - Parcerias (Aba sobre o FUTQUINTA);
+4 - Multiverso, com os links para outros projetos nossos (Maverick 2 e etc);
+5 - Contato, com email, whatsapp, redes sociais e etc (Obs. da empresa);
+6 - Leva para a aba de contato
+
