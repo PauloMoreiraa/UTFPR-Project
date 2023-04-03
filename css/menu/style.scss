@@ -1,0 +1,126 @@
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    
+
+    nav{
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #000, #00000000);
+        width: 100%;
+        height: 20vh;
+        transition: .3s;
+
+        @media(max-width: 820px){
+            height: 8vh;
+            background-color: #111;
+        }
+        
+        
+
+        .logo{
+
+            img{
+                width: 10%;
+                transition: .3s;
+            }
+          
+        }
+
+        .mobile-menu{
+            font-size: 1em;
+            cursor: pointer;
+            display: none;
+            transition: .3s;
+            color: #fff;
+            z-index: 9999;
+
+            &.active{
+                transform: rotate(360deg);
+                transition: .3s;
+            }
+
+            @media(max-width: 820px){
+                display: block;
+            }
+        }
+
+        .nav-list{
+            list-style: none;
+            display: flex;
+            background-color: transparent;
+
+            @media(max-width: 820px){
+                position: absolute;
+                top: 8vh;
+                right: 0;
+                width: 100vw;
+                height: 92vh;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                transform: translateX(100%);
+                transition: .3s ease-out;
+                backdrop-filter: blur(4px);
+                background-color: #0000004d;
+
+                &.active{
+                    transform: translateX(0);
+                    transition: .3s ease-in;
+                }
+
+            }
+
+            li{
+               margin-left: 30px;
+
+               @media(max-width: 820px){
+                margin-left: 0;
+               }
+
+               a{
+                color: #FFF;
+                opacity: 1;
+                font-size: 1.2em;
+                transition: .3S;
+
+                &:hover{
+                    opacity: .8;
+                    transition: .3S;
+                }
+
+               }
+            }
+        }
+    }
+
+    .sticky{
+        background: none;
+        background-color: #0000005e;
+        transition: .3s;
+        height: 8vh;
+        backdrop-filter: blur(4px);
+
+        @media(max-width: 820px){
+            height: 8vh;
+            
+        }
+        
+        .logo{
+
+            img{
+                width: 5%;
+                transition: .3s;
+
+                @media(max-width: 820px){
+                    width: 10%;
+                }
+            }
+          
+        }
+    }
+}
+
