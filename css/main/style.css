@@ -65,7 +65,7 @@
 }
 .main .p1 p {
   width: 50%;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3em;
   padding-bottom: 10px;
 }
@@ -76,6 +76,7 @@
 }
 .main .p1 .btn {
   margin-top: 10px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,6 +91,8 @@
 .main .p1 .btn:hover {
   background: none;
   color: #fff;
+  width: 110%;
+  transition: 0.3s;
 }
 .main .p1 .comprar {
   border-color: #269226;
