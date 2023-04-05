@@ -20,3 +20,16 @@ a{
 .container{
     padding: 0 10%;
 }
+
+body::-webkit-scrollbar {
+    width: 4px;            
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000;       
+  }
+  
+  body::-webkit-scrollbar-thumb {  
+    background-color: #333;
+  }
+  

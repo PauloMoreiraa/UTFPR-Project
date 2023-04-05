@@ -59,7 +59,7 @@ header nav .nav-list {
     transition: 0.3s ease-out;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.3019607843);
+    background-color: rgba(0, 0, 0, 0.6039215686);
   }
   header nav .nav-list.active {
     transform: translateX(0);
