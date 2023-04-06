@@ -1,0 +1,146 @@
+#sobre {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+  padding-top: 0vh;
+}
+@media (max-width: 820px) {
+  #sobre {
+    padding-top: 8vh;
+  }
+}
+#sobre .titulo-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+}
+#sobre .titulo-sobre span {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  font-size: 2em;
+  font-weight: 800;
+}
+#sobre .titulo-sobre span::before, #sobre .titulo-sobre span::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+}
+#sobre .titulo-sobre span::before {
+  margin-right: 15px;
+}
+#sobre .titulo-sobre span::after {
+  margin-left: 15px;
+}
+#sobre .grupo-cards {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+@media (max-width: 820px) {
+  #sobre .grupo-cards {
+    justify-content: center;
+  }
+}
+#sobre .grupo-cards .card {
+  flex-wrap: wrap;
+  width: 300px;
+  height: 400px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 820px) {
+  #sobre .grupo-cards .card {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+#sobre .grupo-cards .card .foto {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 1s;
+  opacity: 0.8;
+}
+#sobre .grupo-cards .card .foto:hover {
+  transform: scale(1);
+  transition: 1s;
+  opacity: 1;
+}
+#sobre .grupo-cards .card #jesse {
+  background-image: url("../../img/teste.jpg");
+}
+#sobre .grupo-cards .card #ww {
+  background-image: url("../../img/teste3.jpg");
+}
+#sobre .grupo-cards .card #gus {
+  background-image: url("../../img/teste2.jpg");
+}
+#sobre .grupo-cards .card .nome {
+  color: #fff;
+  font-size: 1.6em;
+  margin-top: 10px;
+  font-weight: 800;
+}
+#sobre .grupo-cards .card .funcao {
+  color: #8d8d8d;
+  font-size: 1em;
+}
+#sobre .grupo-cards .card .redes {
+  background-color: transparent;
+  padding-top: 10px;
+  display: flex;
+}
+#sobre .grupo-cards .card .redes .instagram, #sobre .grupo-cards .card .redes .linkedin, #sobre .grupo-cards .card .redes .github {
+  margin: 0px 10px;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translateY(0);
+  transition: 0.3s;
+}
+#sobre .grupo-cards .card .redes .instagram:hover, #sobre .grupo-cards .card .redes .linkedin:hover, #sobre .grupo-cards .card .redes .github:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+#sobre .grupo-cards .card .redes .github {
+  background-image: url("../../img/redessociais/githubbranco.png");
+}
+#sobre .grupo-cards .card .redes .github:hover {
+  background-image: url("../../img/redessociais/githubcor.png");
+}
+#sobre .grupo-cards .card .redes .linkedin {
+  background-image: url("../../img/redessociais/linkedinbranco.png");
+}
+#sobre .grupo-cards .card .redes .linkedin:hover {
+  background-image: url("../../img/redessociais/linkedincor.png");
+}
+#sobre .grupo-cards .card .redes .instagram {
+  background-image: url("../../img/redessociais/instagrambranco.png");
+}
+#sobre .grupo-cards .card .redes .instagram:hover {
+  background-image: url("../../img/redessociais/instagramcor.png");
+}/*# sourceMappingURL=style.css.map */

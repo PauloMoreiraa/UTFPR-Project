@@ -86,7 +86,7 @@ header nav .nav-list li a:hover {
 }
 header .sticky {
   background: none;
-  background-color: rgba(0, 0, 0, 0.368627451);
+  background-color: rgba(0, 0, 0, 0.6039215686);
   transition: 0.3s;
   height: 8vh;
   -webkit-backdrop-filter: blur(4px);
