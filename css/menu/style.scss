@@ -23,9 +23,11 @@ header{
         
 
         .logo{
+            background-color: transparent;
+            width: 10%;
 
             img{
-                width: 10%;
+                width: 100%;
                 transition: .3s;
             }
           
@@ -113,11 +115,11 @@ header{
         .logo{
 
             img{
-                width: 5%;
+                width: 40%;
                 transition: .3s;
 
                 @media(max-width: 820px){
-                    width: 10%;
+                    width: 100%;
                 }
             }
           

@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
   flex-direction: column;
   padding-top: 0vh;
 }
@@ -64,7 +63,6 @@
   flex-wrap: wrap;
   width: 300px;
   height: auto;
-  min-height: 500px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -85,19 +83,21 @@
   border-radius: 50%;
   transform: scale(0.9);
   transition: 0.8s;
+  animation: none;
 }
 #sobre .grupo-cards .card .foto:hover {
   transform: scale(1);
+  border: none;
   transition: 0.8s;
 }
 #sobre .grupo-cards .card #jesse {
-  background-image: url("../../img/teste.jpg");
+  background-image: url("../../img/fotos-sobre/provisoria.png");
 }
 #sobre .grupo-cards .card #ww {
-  background-image: url("../../img/teste3.jpg");
+  background-image: url("../../img/fotos-sobre/djhemison.jpg");
 }
 #sobre .grupo-cards .card #gus {
-  background-image: url("../../img/teste2.jpg");
+  background-image: url("../../img/fotos-sobre/marco.jpg");
 }
 #sobre .grupo-cards .card .nome {
   color: #fff;
@@ -155,4 +155,13 @@
 }
 #sobre .grupo-cards .card .redes .instagram:hover {
   background-image: url("../../img/redessociais/instagramcor.png");
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */

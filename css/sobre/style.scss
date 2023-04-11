@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
     flex-direction: column;
     padding-top: 0vh;
     
@@ -68,7 +67,6 @@
             flex-wrap: wrap;
             width: 300px;
             height: auto;
-            min-height: 500px;
             background-color: transparent;
             display: flex;
             align-items: center;
@@ -81,32 +79,39 @@
                 margin-top: 50px;
             }
 
-            .foto{
-                width: 300px;
-                height: 300px;
-                background-position: center;
-                background-size: cover;
-                border-radius: 50%;
-                transform: scale(.9); 
-                transition: .8s;
-                
-                &:hover{
-                    transform: scale(1);
+                .foto{
+                    width: 300px;
+                    height: 300px;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    transform: scale(.9); 
                     transition: .8s;
+                    animation: none;
+    
+                    
+                    
+                    &:hover{
+                        transform: scale(1);
+                        border: none;
+                        transition: .8s;
+                    }
                 }
-            }
+            
+
+            
 
             
            
 
             #jesse{
-                background-image: url('../../img/teste.jpg');
+                background-image: url('../../img/fotos-sobre/provisoria.png');
             }
             #ww{
-                background-image: url('../../img/teste3.jpg');
+                background-image: url('../../img/fotos-sobre/djhemison.jpg');
             }
             #gus{
-                background-image: url('../../img/teste2.jpg');
+                background-image: url('../../img/fotos-sobre/marco.jpg');
             }
 
             .nome{
@@ -178,5 +183,13 @@
             }
         }
 
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
     }
 }

@@ -1,0 +1,120 @@
+#multiverso {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../img/black.png");
+  background-size: cover;
+  background-position: top;
+}
+#multiverso .parts {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+@media (max-width: 820px) {
+  #multiverso .parts {
+    flex-direction: column;
+  }
+}
+#multiverso .parts .p1, #multiverso .parts .p2 {
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  padding-top: 8vh;
+}
+#multiverso .parts .p1 {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 820px) {
+  #multiverso .parts .p1 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+#multiverso .parts .p1 .titulo-multiverso {
+  font-size: 2.6em;
+  background: -webkit-linear-gradient(#d62727, #fa4747);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+#multiverso .parts .p1 p {
+  font-size: 1.4em;
+  color: #fff;
+}
+#multiverso .parts .p1 .sites {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  padding-top: 20%;
+}
+@media (max-width: 820px) {
+  #multiverso .parts .p1 .sites {
+    justify-content: center;
+    align-items: center;
+  }
+}
+#multiverso .parts .p1 .sites a {
+  color: #fff;
+  font-weight: 800;
+}
+#multiverso .parts .p1 .sites a .jardimweb {
+  border-radius: 12px;
+  box-shadow: inset 0px 0px 10px #000;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  margin-right: 5px;
+}
+#multiverso .parts .p1 .sites a .jardimweb:hover {
+  box-shadow: inset 0px 0px 30px #000;
+  transition: 0.4s;
+}
+#multiverso .parts .p1 .sites a .jardimweb img {
+  width: 60px;
+}
+#multiverso .parts .p2 {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 820px) {
+  #multiverso .parts .p2 {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
+#multiverso .parts .p2 .astronauta {
+  background-color: transparent;
+  animation: astro ease-in-out 4s infinite;
+}
+#multiverso .parts .p2 .astronauta img {
+  width: 250px;
+}
+
+@keyframes astro {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

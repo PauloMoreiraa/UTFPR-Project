@@ -20,8 +20,12 @@ header nav {
     background-color: #111;
   }
 }
-header nav .logo img {
+header nav .logo {
+  background-color: transparent;
   width: 10%;
+}
+header nav .logo img {
+  width: 100%;
   transition: 0.3s;
 }
 header nav .mobile-menu {
@@ -99,11 +103,11 @@ header .sticky {
   }
 }
 header .sticky .logo img {
-  width: 5%;
+  width: 40%;
   transition: 0.3s;
 }
 @media (max-width: 820px) {
   header .sticky .logo img {
-    width: 10%;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
