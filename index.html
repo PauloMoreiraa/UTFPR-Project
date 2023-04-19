@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="img/icones/favicon-32x32.png" type="image/x-icon">
 
     <!--AOS-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <!--CSS-->
     <link rel="stylesheet" href="css/index/style.css">
@@ -16,9 +16,15 @@
     <link rel="stylesheet" href="css/main/style.css">
     <link rel="stylesheet" href="css/sobre/style.css">
     <link rel="stylesheet" href="css/multiverso/style.css">
+    <link rel="stylesheet" href="css/parceiros/style.css">
 
 </head>
 <body>
+    <script>
+        window.onload = function() {
+        alert("Página em desenvolvimento, talvez exista BUGS!");
+        };
+    </script>
     <div class="scrola"><span>Scroll<ion-icon name="caret-down-outline"></ion-icon></span></div>
     <header>
         <nav>
@@ -28,8 +34,9 @@
             </div>
             <ul class="nav-list">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobre">Quem Somos?</a></li>
                 <li><a href="#multiverso">Multiverso</a></li>
+                <li><a href="#parceiro">Parceiro</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -53,7 +60,7 @@
         </div>
     </main>
 
-    <div class="bc">
+    <div class="bc"> <!--Essa div só serve para o background-->
         <section id="sobre" class="container">
             <div data-aos="slide-left" class="titulo-sobre">
                 <span>Quem Somos?</span>
@@ -116,16 +123,18 @@
                     <span data-aos="slide-right" class="titulo-multiverso">Multiverso</span>
                     <p data-aos="slide-right" data-aos-duration="1000">No multiverso você encontra os sites usados em sala, só que 1000x mais otimizados.</p>
                     <div class="sites">
-                        <a data-aos="zoom-out" href="#">
+                        <a id="card" data-aos="zoom-out" href="#">
                             <div class="jardimweb">
                                 <img src="img/plantar.png" alt="">
-                                <span class="titulo-sites">Jardim Web 2</span>
+                                <span class="titulo-sites">Jd. Web 2</span>
+                                <span>Em Breve</span>
                             </div>
                         </a>
-                        <a data-aos="zoom-out" href="#">
+                        <a id="card-2" data-aos="zoom-out" href="#">
                             <div class="jardimweb">
                                 <img src="img/moodle.png" alt="">
                                 <span class="titulo-sites">Moodle 2</span>
+                                <span>Em Breve</span>
                             </div>
                         </a>
                     </div>
@@ -139,14 +148,51 @@
         </section>
     </div>
 
+    <section id="parceiro" class="container">
+        <div data-aos="slide-left" class="titulo-parceiro">
+            <span>Parceiro</span>
+        </div>
+        <div class="parts">
+            <div class="p1">
+                <img src="img/parceiro/pngirmaos.png" alt="">
+            </div>
+            <div class="p2">
+                <span>Conheça nosso time parceiro!</span>
+                <p>O time Irmãos Metralha é um time formado por estudantes universitários de diversos cursos.</p>
+                <div class="btns">
+                    <a id="btn1" href="#" target="_blank">Visitar Website</a>
+                    <a id="btn2" href="https://chat.whatsapp.com/Jd4ThEpzusi6z7628sHLyj" target="_blank">Entre para o Futquinta</a>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </section>
+
 
     <!--AOS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
 
-    
+    <!--Vanilla Tilt-->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector("#card"), {
+            max: 30,
+            speed: 300,
+            glare: true,
+            "max-glare": 1,
+        });
+        VanillaTilt.init(document.querySelector("#card-2"), {
+            max: 30,
+            speed: 300,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
     <script src="js/effect-menu.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
